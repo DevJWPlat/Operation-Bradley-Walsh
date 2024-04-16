@@ -4,7 +4,7 @@ body {
 }
 
 $red: #de1f26;
-
+ 
 .section-gap {
     padding: 80px 0 40px 0;
 }
@@ -109,6 +109,7 @@ header {
         overflow: hidden;
         text-decoration: none;
         margin-bottom: 100px !important;
+        position: relative;
         @media (max-width: 1200px) {
             width: 45%;
         }
@@ -117,6 +118,26 @@ header {
         }
         @media (max-width: 700px) {
             width: 100%;
+        }
+        .unavailable-overlay {
+            width: 100%;
+            background: black;
+            height: 100vh;
+            position: absolute;
+            z-index: 2;
+            opacity: 0.8;
+            .red {
+                margin: 60% 0;
+                background: #de1f26;
+                position: absolute;
+                width: 100%;
+                h1 {
+                    padding: 10px 0;
+                    text-align: center;
+                    margin: 0;
+                    color: #fff;
+                }
+            }
         }
         .img-container {
             position: relative;
